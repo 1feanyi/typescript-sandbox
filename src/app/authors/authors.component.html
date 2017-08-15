@@ -1,0 +1,7 @@
+<h2>{{ authors.lenght }} Authors</h2>
+<ul>
+  <li *ngFor="let author of authors">
+    {{ author }} is an author.
+    <input [(ngModel)]="email" (keyup.enter)="onKeyUp()" />
+  </li>
+</ul>
