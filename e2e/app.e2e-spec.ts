@@ -1,10 +1,10 @@
-import { HellowWorldPage } from './app.po';
+import { HelloTypescriptPage } from './app.po';
 
-describe('hellow-world App', () => {
-  let page: HellowWorldPage;
+describe('hello-typescript App', () => {
+  let page: HelloTypescriptPage;
 
   beforeEach(() => {
-    page = new HellowWorldPage();
+    page = new HelloTypescriptPage();
   });
 
   it('should display welcome message', () => {
