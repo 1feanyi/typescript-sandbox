@@ -11,6 +11,7 @@ import { AppComponent } from './app.component';
 import { FavoriteComponent } from './favorite/favorite.component';
 import { TitleCasePipe } from './title-case.pipe';
 import { TitleCaseComponent } from './title-case/title-case.component';
+import { PanelComponent } from './panel/panel.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { TitleCaseComponent } from './title-case/title-case.component';
     SummaryPipe,
     FavoriteComponent,
     TitleCasePipe,
-    TitleCaseComponent
+    TitleCaseComponent,
+    PanelComponent
   ],
   imports: [
     BrowserModule,
