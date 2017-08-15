@@ -7,9 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  tweet={
-    body: '...',
-    likesCount: 10,
-    isLiked: true
-  }
+  courses = [1, 2];
 }
