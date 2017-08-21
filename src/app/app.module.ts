@@ -1,3 +1,5 @@
+import { AppErrorHandler } from './common/app-error-handler';
+import { ErrorHandler } from 'protractor/built/exitCodes';
 import { PostService } from './services/post.service';
 import { HttpModule } from '@angular/http';
 import { SignupFormComponent } from './signup-form/signup-form.component';
@@ -51,7 +53,8 @@ import { PostsComponent } from './posts/posts.component';
   providers: [
     PostService,
     CoursesService,
-    AuthorsService
+    AuthorsService,
+    { provide: ErrorHandler, useClass: AppErrorHandler }
   ],
   bootstrap: [AppComponent]
 })
