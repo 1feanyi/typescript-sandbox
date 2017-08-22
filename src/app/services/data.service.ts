@@ -19,6 +19,8 @@ export class DataService {
   }
 
   create(resource) {
+    // return Observable.throw(new AppError()); // throw error for testing
+
     return this.http.post(this.url, JSON.stringify(resource))
         .map(response => response.json())
         .catch(this.handleError);
@@ -32,6 +34,7 @@ export class DataService {
   }
 
   delete(id) {
+    // return Observable.throw(new AppError()); // throw error for testing
     return this.http.delete(this.url + '/' + id)
         .map(response => response.json())
         .catch(this.handleError);
