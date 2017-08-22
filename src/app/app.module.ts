@@ -1,3 +1,4 @@
+import { GithubFollowersService } from './github-followers.service';
 import { AppErrorHandler } from './common/app-error-handler';
 import { ErrorHandler } from 'protractor/built/exitCodes';
 import { PostService } from './services/post.service';
@@ -24,6 +25,7 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
 import { NewCourseFormComponent } from './new-course-form/new-course-form.component';
 import { ChangePasswordComponent } from './change-password/change-password.component';
 import { PostsComponent } from './posts/posts.component';
+import { GithubFollowersComponent } from './github-followers/github-followers.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +44,8 @@ import { PostsComponent } from './posts/posts.component';
     ContactFormComponent,
     NewCourseFormComponent,
     ChangePasswordComponent,
-    PostsComponent
+    PostsComponent,
+    GithubFollowersComponent
   ],
   imports: [
     BrowserModule,
@@ -54,6 +57,7 @@ import { PostsComponent } from './posts/posts.component';
     PostService,
     CoursesService,
     AuthorsService,
+    GithubFollowersService,
     { provide: ErrorHandler, useClass: AppErrorHandler }
   ],
   bootstrap: [AppComponent]
